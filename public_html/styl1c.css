@@ -1,0 +1,16 @@
+#div2{
+display:none;
+}
+h1,h2,p{
+color:black;
+}
+#div1 p:first-letter{
+font-size:16px;
+color:black;
+}
+#div1{
+left:0;
+}
+h1{
+letter-spacing:0;
+}

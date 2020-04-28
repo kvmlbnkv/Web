@@ -1,0 +1,30 @@
+td{
+background-color:pink;
+border-color:green;
+}
+tr td:nth-child(2){
+background-color:red;
+}
+tr td:nth-child(3){
+background-color:purple;
+}
+th{
+background-color:blue;
+border-color:orange;
+font : 150% sans-serif;
+color:yellow;
+text-transform:uppercase;
+}
+table{
+border-color:yellow;
+}
+ol{
+list-style-type: upper-roman;
+}
+ul li{
+list-style-type: lower-roman;
+}
+
+ul li li{
+list-style-type: lower-greek;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Lab JS</title>
+	<script type="text/javascript">
+	function mojaFunkcja(tekst) {
+		console.log('Wywołanie funkcji z parametrem: ' + tekst);
+	}
+	function druga(e){
+		alert(e.target.style.background);
+	}
+	function czecia(e){
+		var r=Math.floor(Math.random()*255);
+		var g=Math.floor(Math.random()*255);
+		var b=Math.floor(Math.random()*255);
+		var rgb='rgb('+r+','+g+','+b+')';
+		e.target.style.background=rgb;
+	}
+	function akapyt(){
+		var r=Math.floor(Math.random()*255);
+		var g=Math.floor(Math.random()*255);
+		var b=Math.floor(Math.random()*255);
+		var el = document.createElement('p');
+		document.body.appendChild(el);
+		var rgb='rgb('+r+','+g+','+b+')';		
+		el.style.background=rgb;
+		el.innerHTML="ale działa nieźle";
+		el.onclick=druga;
+		el.onmouseover=czecia;
+	}
+	
+</script>
+</head>
+<body>
+	<form name="formularz">
+		<p id="akapit"><input type="button" value="Rysuj!" onclick="akapyt()"></p>
+	</form>
+	
+</body>
+</html>
