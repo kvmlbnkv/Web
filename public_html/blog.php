@@ -23,7 +23,7 @@
 		echo "<ul>";
 		foreach($blogs as $blog){
 			if(!$blog->isDot()){
-				echo "<li><a href=\"http://borg.kis.agh.edu.pl/~bienkami/blog.php?nazwa=".$blog."\">".$blog."</a><br/></li>";
+				echo "<li><a href=\"./blog.php?nazwa=".$blog."\">".$blog."</a><br/></li>";
 			}
 		}
 		echo "</ul>";
